@@ -22,23 +22,23 @@
                 <form>
                     <div class="mb-3">
                         <label for="dateOfBirth" class="form-label"><b>Date of Birth</b></label>
-                        <input type="date" class="form-control" value="" required>
+                        <input id="dateOfBirth" type="date" class="form-control" value="" required>
                     </div>
                     <p><b>Select Gender</b></p>
                     <div class="form-check">
-                        <input id="maleInput" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input id="maleInput" type="radio" name="flexRadioDefault" id="gender>
                         <label class="form-check-label" for="male">Male</label>
                     </div>
                     <div class="form-check">
-                        <input class="femaleInput" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="femaleInput" type="radio" name="flexRadioDefault" id="gender">
                         <label class="form-check-label" for="female">Female</label>
                     </div>
                     <div class="form-check">
-                        <input class="notSayInput" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="notSayInput" type="radio" name="flexRadioDefault" id="gender">
                         <label class="form-check-label" for="notsay">Rather not say</label>
                     </div>
                     <div class="btn">
-                        <button id="generate" onclick="generateAkanName()" class="btn btn-success">Generate</button>
+                        <button id="generate" onclick="genAkanName()" class="btn btn-success">Generate</button>
                     </div>
                 </form>
             </div>        
