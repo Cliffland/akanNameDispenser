@@ -16,6 +16,11 @@ function getAkanName(){
             alert("Please provide your gender.")
             document.getElementById(selectGender).innerHTML = "Select gender"
         }
-        for 
+        for (j = 0; j < gender.length; j++){
+            if (gender[j].checked){
+                new_gender_value = gender[j].value;
+            }
+        }
+        return new_gender_value;
     }
 }
