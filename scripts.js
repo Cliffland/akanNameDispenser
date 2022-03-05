@@ -12,5 +12,10 @@ function getAkanName(){
             }
             i++;
         }
+        if (!valid){
+            alert("Please provide your gender.")
+            document.getElementById(selectGender).innerHTML = "Select gender"
+        }
+        for 
     }
 }
