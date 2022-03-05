@@ -23,4 +23,9 @@ function getAkanName(){
         }
         return new_gender_value;
     }
+    var genderValue = getGender();
+    console.log("I got passed " + genderValue);
+    function monthValidator(){
+        
+    }
 }
