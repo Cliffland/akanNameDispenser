@@ -88,7 +88,7 @@ function getAkanName(){
             break;
 
             default:
-                alert("Please Veriify that you are human");
+                alert("Please Verify that you are human");
         }
     
     }else if (myGender === "female" && monthValid && dayValid){
@@ -116,8 +116,10 @@ function getAkanName(){
             break;
 
             default:
-                alert("Please Veriify that you are human");
+                alert("Please Verify that you are human");
         }
     
+    }else{
+        alert("Invalid Details!!!")
     }
 }
