@@ -126,3 +126,7 @@ function getAkanName(){
         alert("Invalid Details!!!")
     }
 }
+document.getElementById("dispense").addEventListener("click", function(event){
+    event.preventDefault();
+    getAkanName();
+});
