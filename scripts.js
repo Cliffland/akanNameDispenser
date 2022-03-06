@@ -23,8 +23,8 @@ function getAkanName(){
         }
         return new_gender_value;
     }
-    var genderValue = getGender();
-    console.log("I got passed " + genderValue);
+    var myGender = getGender();
+    console.log("I got passed " + myGender);
     function monthValidator(){
         if (monthOfBirth < 1 || monthOfBirth > 12){
             return false;
@@ -88,7 +88,36 @@ function getAkanName(){
             break;
 
             default:
-                alert("Please Veriify that you are human";)
+                alert("Please Veriify that you are human");
         }
+    
+    }else if (myGender === "female" && monthValid && dayValid){
+        switch (dayOfTheWeek){
+            case 0:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[0];
+            break;
+            case 1:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[1];
+            break;
+            case 2:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[2];
+            break;
+            case 3:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[3];
+            break;
+            case 4:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[4];
+            break;
+            case 5:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[5];
+            break;
+            case 6:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[6];
+            break;
+
+            default:
+                alert("Please Veriify that you are human");
+        }
+    
     }
 }
