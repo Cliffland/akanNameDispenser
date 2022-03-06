@@ -68,6 +68,27 @@ function getAkanName(){
             case 0:
             document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[0];
             break;
+            case 1:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[1];
+            break;
+            case 2:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[2];
+            break;
+            case 3:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[3];
+            break;
+            case 4:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[4];
+            break;
+            case 5:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[5];
+            break;
+            case 6:
+            document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[6];
+            break;
+
+            default:
+                alert("Please Veriify that you are human";)
         }
     }
 }
