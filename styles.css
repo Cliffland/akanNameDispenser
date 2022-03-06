@@ -1,3 +1,8 @@
 .container-fluid{
     text-align: center;
 }
+body{
+    background-image: url(images/Ghana-Flag.jpg);
+    background-size: cover;
+    color: whitesmoke;
+}
