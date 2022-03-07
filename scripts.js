@@ -2,6 +2,9 @@ function getAkanName(){
     var yearOfBirth = document.getElementById("dateOfBirth").value;
     var monthOfBirth = Number(document.getElementById("dateOfBirth").value);
     var dayOfBirth = Number(document.getElementById("dateOfBirth").value);
+
+    const d = new Date(document.getElementById("dateOfBirth").valueAsNumber);
+	let day = d.getDay();
     
     var gend = document.getElementsByName("flexRadioDefault");
     var valid = false;
@@ -55,19 +58,12 @@ function getAkanName(){
     var monthValid = monthValidator();
     var dayValid = dayValidator();
     var dayOfTheWeek;
-    
-    var dDayOfTheWeek = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2 * Number(yearOfBirth.slice(0,2))- 1) +((5 * Number(yearOfBirth.slice(2,4))/ 4))+ ((26 * (monthOfBirth + 1) / 10)) + dayOfBirth) % 7)
-    if(dDayOfTheWeek === 0){
-        dayOfTheWeek = 6;
-    }else{
-        dayOfTheWeek = dDayOfTheWeek - 1;
-    }
-    
+          
     var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     if (myGender === "male" && monthValid && dayValid){
-        switch (dayOfTheWeek){
+        switch (day){
             case 0:
             document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + maleName[0];
             break;
@@ -95,7 +91,7 @@ function getAkanName(){
         }
     
     }else if (myGender === "female" && monthValid && dayValid){
-        switch (dayOfTheWeek){                                                                                                      
+        switch (day){                                                                                                      
             case 0:
             document.getElementById("result").innerHTML = "You were born on a Sunday and your Akan name is " + femaleName[0];
             break;
@@ -126,7 +122,8 @@ function getAkanName(){
         alert("Invalid Details!!!")
     }
 }
-document.getElementById("dispense").addEventListener("click", function(event){
-    event.preventDefault();
-    getAkanName();
+
+document.getElementById("dispense").addEventListener("click", function (event) {
+	event.preventDefault();
+	getAkanName();
 });
